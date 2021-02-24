@@ -1,0 +1,47 @@
+
+.player{
+    height: 500px;
+    width: 500px
+}
+
+body{
+    background-image: url("https://www.wallpapertip.com/wmimgs/245-2456647_galaxy-background-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    animation-name: background-scroll;
+    animation-duration: 150s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-scroll {
+    from {background-position: left top}
+    to {background-position: right top}
+}
+
+.background{
+
+        position: fixed;
+        top: 60%;
+        left: 46%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      
+}
+
+img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    height: 800px;
+    width: 930;
+    z-index: 2;
+
+}
+
+nav{
+    color: white
+}

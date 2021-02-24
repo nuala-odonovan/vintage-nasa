@@ -21,10 +21,13 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "http-server": "^0.12.3",
+    "install": "^0.13.0",
     "morgan": "^1.10.0",
+    "npm": "^7.5.6",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "react": "^17.0.1",
@@ -34,6 +37,7 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "sequelize": "^6.5.0"
+    "sequelize": "^6.5.0",
+    "video-react": "^0.14.1"
   }
 }
