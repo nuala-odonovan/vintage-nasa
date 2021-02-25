@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { Player } from 'video-react';
 import ControlBar from 'video-react/lib/components/control-bar/ControlBar';
+import Test from './test'
 
 class Main extends React.Component {
   constructor() {
@@ -74,13 +75,13 @@ class Main extends React.Component {
 
     return (
         <div>
-            {/* <nav>
+            <nav>
                 <button onClick={() => console.log('clicked')}>unmute</button>
                 <span onClick={this.handleRefresh}>
                     new
                 </span>
-            </nav> */}
-            <button onClick={this.button}>test</button>
+            </nav>
+            <button onClick={() => console.log('hello')}>test</button>
       <div className="container">
         <img src={"tv.png"} />
         <div className="background">
