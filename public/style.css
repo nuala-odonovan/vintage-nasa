@@ -19,6 +19,19 @@ body{
     to {background-position: right top}
 }
 
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
 .background{
 
         position: fixed;
@@ -30,17 +43,59 @@ body{
       
 }
 
-img{
+.button{
+    position: relative;
+    z-index: 3;
+    margin-left: 2em;
+    margin-right: 2em
+}
+
+.tv{
     position: fixed;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
     height: 800px;
-    width: 930;
+    width: 1500px;
     z-index: 2;
 
 }
+
+.text-wrapper {
+    position: relative;
+    color: white
+}
+
+.text-wrapper p{
+    white-space: nowrap;
+}
+
+.marquee1 {
+    animation: scroll-left 45s linear infinite;
+    animation-delay: 3s;
+}
+
+.marquee2 {
+    animation: scroll-left 45s linear infinite;
+    animation-delay: 5s;
+}
+
+.marquee3 {
+    animation: scroll-left 45s linear infinite;
+}
+
+.marquee4 {
+    animation: scroll-left 45s linear infinite;
+    animation-delay: 7s;
+}
+
+.marquee5 {
+    animation: scroll-left 45s linear infinite;
+    animation-delay: 9s;
+}
+
+
 
 nav{
     color: white

@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  devtool: 'eval',
+  // devtool: 'eval',
   mode: 'development',
   module: {
     rules: [
